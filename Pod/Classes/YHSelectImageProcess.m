@@ -133,7 +133,7 @@ INIT_DZ_EXTERN_STRING(kDZIMGFromCamera,拍照 )
         if (weakSelf.uploadedBlock) {
             weakSelf.uploadedBlock(url, error);
         }
-    }];
+    } hostObject: self];
 }
 
 - (void) didUploadedImage:(UIImage*)image withURL:(NSString*)url
